@@ -2,6 +2,7 @@ const clear = document.querySelector('.clear');
 const dateElement = document.getElementById('date');
 const list = document.getElementById('list');
 const input = document.getElementById('input');
+const button =  document.querySelector('.add-to-do i');
 
 const CHECK = 'fa-check-circle';
 const UNCHECK = 'fa-circle-thin';
@@ -61,24 +62,34 @@ function addToDo(toDo, id, done, trash) {
 
 document.addEventListener('keyup', function(event) {
     if (event.keyCode == 13) {
-        const toDo = input.value;
-        if (toDo) {
-            addToDo(toDo, id, false, false);
-
-            LIST.push({
-                name: toDo,
-                id: id,
-                done: false,
-                trash: false
-            });
-
-            localStorage.setItem('TODO', JSON.stringify(LIST));
-
-            id++;
-        }
-        input.value = '';
+        createToDo();
     }
 });
+
+button.addEventListener('click', function() {
+    if(input.value) {
+        createToDo();
+    }
+});
+
+function createToDo() {
+    const toDo = input.value;
+    if (toDo) {
+        addToDo(toDo, id, false, false);
+
+        LIST.push({
+            name: toDo,
+            id: id,
+            done: false,
+            trash: false
+        });
+
+        localStorage.setItem('TODO', JSON.stringify(LIST));
+
+        id++;
+    }
+    input.value = '';
+}
 
 function completeToDo(element) {
     element.classList.toggle(CHECK);
