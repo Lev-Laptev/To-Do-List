@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const clear = document.querySelector('.clear');
-    const dateElement = document.getElementById('date');
-    const list = document.getElementById('list');
-    const input = document.getElementById('input');
-    const button =  document.querySelector('.add-to-do i');
+    const clear = document.querySelector('.app__clear');
+    const dateElement = document.querySelector('.app__date');
+    const list = document.querySelector('.app__list');
+    const input = document.querySelector('.app__input');
+    const button =  document.querySelector('.app__control i');
 
     const CHECK = 'fa-check-circle';
     const UNCHECK = 'fa-circle-thin';
@@ -51,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const LINE = done ? LINE_THROUGH : '';
 
         const item = `
-            <li class="item">
+            <li class="app__item">
                 <i class="fa ${DONE} co" job="complete" id="${id}"></i>
-                <p class="text ${LINE}">${toDo}</p>
+                <p class="app__text ${LINE}">${toDo}</p>
                 <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
             </li>
         `;
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function completeToDo(element) {
         element.classList.toggle(CHECK);
         element.classList.toggle(UNCHECK);
-        element.parentNode.querySelector('.text').classList.toggle(LINE_THROUGH);
+        element.parentNode.querySelector('.app__text').classList.toggle(LINE_THROUGH);
 
         LIST[element.id].done = LIST[element.id].done ? false : true;
     }
