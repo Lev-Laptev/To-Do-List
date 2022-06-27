@@ -1,5 +1,7 @@
 # To-Do-List
 
+### View: [Click](https://vanilla-js-to-do.netlify.app/)
+
 ## Table of Contents
 
 - [About](#about)
