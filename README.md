@@ -1,7 +1,8 @@
-# To-Do-List
+# vanilla-js-to-do-list
 
-### View: [Click](https://vanilla-js-to-do.netlify.app/)
+## Demo
 
+View: [Click](https://vanilla-js-to-do.netlify.app/)
 ## Table of Contents
 
 - [About](#about)
