@@ -27,8 +27,12 @@
 }
 
 .app__header {
-    width: 380px;
-    height: 200px;
+    display: flex;
+    align-items: flex-end;
+
+    height: 160px;
+
+    padding: 20px;
 
     background-image: url('../image/background.jpg');
     background-size: 100% 200%;
@@ -58,10 +62,6 @@
 }
 
 .app__date {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-
     color: var(--color-white);
     font-size: 25px;
     font-family: 'Titillium Web', sans-serif;
@@ -87,26 +87,17 @@
 }
 
 .app__item {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    width: 380px;
-    height: 45px;
-    min-height: 45px;
-
-    padding: 0;
-    margin: 0;
+    padding: 10px;
 
     border-bottom: 1px solid var(--color-grey);
     list-style: none;
 }
 
 .app__item i.co {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-
-    padding-left: 5px;
-
     font-size: 25px;
 }
 
@@ -119,15 +110,8 @@
 }
 
 .app__item p.app__text {
-    position: absolute;
-    top: 5px;
-    left: 50px;
-
     width: 100%;
     max-width: 285px;
-
-    padding: 0;
-    margin: 0;
 
     font-size: 20px;
 
@@ -140,10 +124,6 @@
 }
 
 .app__item i.de {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-
     font-size: 25px;
 }
 
@@ -154,7 +134,8 @@
 }
 
 .app__control {
-    position: relative;
+    display: flex;
+    align-items: center;
 
     width: 360px;
     height: 40px;
@@ -166,18 +147,13 @@
 }
 
 .app__control i {
-    position: absolute;
-
     font-size: 40px;
     color: var(--color-blue);
 }
 
 .app__control input {
-    position: absolute;
-    left: 50px;
-
     height: 35px;
-    width: 310px;
+    width: 100%;
 
     padding-left: 10px;
 
