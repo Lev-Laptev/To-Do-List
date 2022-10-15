@@ -1,3 +1,14 @@
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #cccccc;
+    --color-green: #6eb200;
+    --color-red: #af0000;
+    --color-blue: #4162f6;
+
+    --font-family-titillium-web: 'Titillium Web', sans-serif;
+}
+
 .wrapper {
     display: flex;
     align-items: center;
@@ -6,9 +17,9 @@
     height: 100vh;
     width: 100vw;
 
-    font-family: 'Titillium Web', sans-serif;
+    font-family: var(--font-family-titillium-web);
     
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--color-grey);
 }
 
 .app {
@@ -18,7 +29,8 @@
 .app__header {
     width: 380px;
     height: 200px;
-    background-image: url('../img/bg.jpg');
+
+    background-image: url('../image/background.jpg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
@@ -36,13 +48,13 @@
 
 .app__clear i {
     font-size: 30px;
-    color: #FFF;
+    color: var(--color-white);
 }
 
 .app__clear i:hover {
-    cursor: pointer;
-    text-shadow: 1px 3px 5px #000;
+    text-shadow: 1px 3px 5px var(--color-black);
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .app__date {
@@ -50,7 +62,7 @@
     bottom: 10px;
     left: 10px;
 
-    color: #FFF;
+    color: var(--color-white);
     font-size: 25px;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -60,7 +72,7 @@
     height: 350px;
     max-height: 350px;
 
-    background-color: #FFF;
+    background-color: var(--color-white);
 
     overflow: auto;
 }
@@ -84,7 +96,7 @@
     padding: 0;
     margin: 0;
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--color-grey);
     list-style: none;
 }
 
@@ -103,7 +115,7 @@
 }
 
 .fa-check-circle {
-    color: #6eb200;
+    color: var(--color-green);
 }
 
 .app__item p.app__text {
@@ -111,6 +123,7 @@
     top: 5px;
     left: 50px;
 
+    width: 100%;
     max-width: 285px;
 
     padding: 0;
@@ -118,12 +131,12 @@
 
     font-size: 20px;
 
-    background-color: #FFF;
+    background-color: var(--color-white);
 }
 
 .lineThrough {
     text-decoration: line-through;
-    color: #ccc;
+    color: var(--color-grey);
 }
 
 .app__item i.de {
@@ -135,7 +148,8 @@
 }
 
 .app__item i.de:hover {
-    color: #af0000;
+    color: var(--color-red);
+
     cursor: pointer;
 }
 
@@ -147,15 +161,15 @@
 
     padding: 10px;
 
-    background-color: #FFF;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-grey);
 }
 
 .app__control i {
     position: absolute;
 
     font-size: 40px;
-    color: #4162f6;
+    color: var(--color-blue);
 }
 
 .app__control input {

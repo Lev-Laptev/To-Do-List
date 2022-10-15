@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (data) {
         LIST = JSON.parse(data);
         id = LIST.length;
+        
         loadList(LIST);
     } else {
         LIST = [];
@@ -57,7 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
             </li>
         `;
-        const position = 'beforeend'
+
+        const position = 'beforeend';
+
         list.insertAdjacentHTML(position, item);
     }
 
@@ -75,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function createToDo() {
         const toDo = input.value;
+
         if (toDo) {
             addToDo(toDo, id, false, false);
 
@@ -89,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             id++;
         }
+
         input.value = '';
     }
 
