@@ -41,21 +41,31 @@
     position: relative;
 }
 
-.app__clear {
+.app__button-clear {
     position: absolute;
     right: 20px;
     top: 20px;
 
-    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     height: 30px;
+    width: 30px;
+
+    padding: 0;
+
+    background: transparent;
+    outline: 0;
+    border: 0;
 }
 
-.app__clear i {
+.app__button-clear i {
     font-size: 30px;
     color: var(--color-white);
 }
 
-.app__clear i:hover {
+.app__button-clear i:hover {
     text-shadow: 1px 3px 5px var(--color-black);
     transform: rotate(45deg);
     cursor: pointer;

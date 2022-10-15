@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const clear = document.querySelector('.app__clear');
+    const clear = document.querySelector('.app__button-clear');
     const dateElement = document.querySelector('.app__date');
     const list = document.querySelector('.app__list');
     const input = document.querySelector('.app__input');
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (data) {
         LIST = JSON.parse(data);
         id = LIST.length;
-        
+
         loadList(LIST);
     } else {
         LIST = [];
