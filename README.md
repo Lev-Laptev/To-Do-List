@@ -6,7 +6,7 @@
 - [Demo](#demo)
 - [Output Structure](#output-structure)
 
-## 🧐 About <a name = "about"></a>
+## 📖 About <a name = "about"></a>
 
 A simple task list app
 
@@ -16,7 +16,7 @@ View: [Click](https://vanilla-js-to-do.netlify.app/)
 
 ![img app](http://test-developer.ru/preview/to-do-list.jpg)
 
-## ⛏️ Output Structure <a name = "output-structure"></a>
+## 🗂 Output Structure <a name = "output-structure"></a>
 
 ```shell
 📦vanilla-js-to-do-list
