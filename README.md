@@ -3,7 +3,7 @@
 ## 📝 Table of Contents
 
 - [About](#about)
-- [About](#demo)
+- [Demo](#demo)
 - [Output Structure](#output-structure)
 
 ## 🧐 About <a name = "about"></a>
