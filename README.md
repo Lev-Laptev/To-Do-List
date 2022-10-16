@@ -1,15 +1,40 @@
-# vanilla-js-to-do-list
+<h1 align="center">Vanilla JS To Do List</h3>
 
-## Demo
-
-View: [Click](https://vanilla-js-to-do.netlify.app/)
-## Table of Contents
+## 📝 Table of Contents
 
 - [About](#about)
-- [Usage](#usage)
-  
-## About <a name = "about"></a>
+- [About](#demo)
+- [Output Structure](#output-structure)
+
+## 🧐 About <a name = "about"></a>
+
+A simple task list app
+
+## 🎥 Demo <a name = "demo"></a>
+
+View: [Click](https://vanilla-js-to-do.netlify.app/)
 
 ![img app](http://test-developer.ru/preview/to-do-list.jpg)
 
-## Usage <a name = "usage"></a>
+## ⛏️ Output Structure <a name = "output-structure"></a>
+
+```shell
+📦vanilla-js-to-do-list
+ ┣ 📂css
+ ┃ ┣ 📜font-awesome.css
+ ┃ ┣ 📜reset.css
+ ┃ ┗ 📜style.css
+ ┣ 📂fonts
+ ┃ ┣ 📜fontawesome-webfont.eot
+ ┃ ┣ 📜fontawesome-webfont.svg
+ ┃ ┣ 📜fontawesome-webfont.ttf
+ ┃ ┣ 📜fontawesome-webfont.woff
+ ┃ ┗ 📜fontawesome-webfont.woff2
+ ┣ 📂image
+ ┃ ┗ 📜background.jpg
+ ┣ 📂js
+ ┃ ┗ 📜index.js
+ ┗ 📜index.html
+```
+
+[(Back to top)](#table-of-contents)
